@@ -24,3 +24,18 @@ This project implements a Music Playback System in Java, consisting of three mai
 - Empowers users with flexibility and control over their music listening experience.
 
 
+## Usage
+
+1. **PlayableItem**
+- Create instances using the constructor `new PlayableItem(songName, artist, popularity, lastTime, length, url)`.
+- Use methods like `getArtist()`, `getSongName()`, `atomicPlay()`, etc.
+2. **MusicDatabase**
+- Create an instance using new MusicDatabase().
+- Add songs using `addSong(name, artist, popularity, duration, url)`.
+- Use methods like `size()`, `partialSearchBySongName(name)`, etc.
+3. **Playlist**
+- Create an instance using new `Playlist()`.
+- Add songs using `addPlayableItem(newItem)` or remove using `removePlayableItem(number)`.
+- Switch playback modes with `switchPlayingMode(newMode)`.
+
+
