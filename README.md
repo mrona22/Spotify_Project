@@ -38,4 +38,8 @@ This project implements a Music Playback System in Java, consisting of three mai
 - Add songs using `addPlayableItem(newItem)` or remove using `removePlayableItem(number)`.
 - Switch playback modes with `switchPlayingMode(newMode)`.
 
+## *License*
+
+*University of California, San Diego (UCSD) - Coursework Project*
+
 
