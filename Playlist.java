@@ -194,58 +194,6 @@ public class Playlist {
             cur = freqListened.poll();
             return cur;
         }
-
-        /*
-        if (playingMode == 0) {
-            if (cur == null & playlist.size() > 0) {
-                cur = playlist.get(0);
-                playingIndex = 0;
-                history.add(cur);
-                return cur;
-            }
-            if (history.isEmpty()) {
-                history.add(cur);
-            }
-            if (playingIndex + 1 < playlist.size()) {
-                playingIndex += 1;
-                cur = playlist.get(playingIndex);
-                history.add(cur);
-                return cur;
-            }
-            return null;
-        } else if (playingMode == 1) {
-            Random random = new Random();
-            int randomIndex = random.nextInt(playlist.size());
-            cur = playlist.get(randomIndex);
-            playingIndex = randomIndex;
-            history.add(cur);
-            return cur;
-        } else {
-            cur = freqListened.poll();
-            history.add(cur);
-            return cur;
-        }
-
-         */
     }
-
-    /*
-    public static void main(String[] args) {
-        Playlist Milan = new Playlist("Milan");
-        Milan.switchPlayingMode(1);
-        PlayableItem ez = new PlayableItem("video2", "Milan", 9, 0, 80, "ab");
-        PlayableItem az = new PlayableItem("video3", "the", 8, 12, 114, "bc");
-        PlayableItem emez = new PlayableItem("video1", "dogs", 10, 20, 100, "ac");
-        PlayableItem who = new PlayableItem("who", "let", 10,32, 104, "abc");
-        Milan.addPlayableItem(emez);
-        Milan.addPlayableItem(ez);
-        Milan.addPlayableItem(az);
-        Milan.addPlayableItem(who);
-        Milan.play(11100);
-        Milan.switchPlayingMode(2);
-        Milan.play(400);
-    }
-
-     */
 
 }
