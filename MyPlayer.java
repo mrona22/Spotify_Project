@@ -2,14 +2,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * The drivem class, they are required to do part of this file
- */
 public class MyPlayer {
 
     public static MusicDatabase data = new MusicDatabase();
 
-    public static ArrayList<Playlist> playlists = new ArrayList<>();// one player might have multiple playlist profile
+    public static ArrayList<Playlist> playlists = new ArrayList<>();
     private static int cur = 0;
     private static int playingMode = 0;
 
@@ -20,7 +17,7 @@ public class MyPlayer {
         while (data.size() == 0) {
             System.out.println(
                     "********************\nOption Lists: \nDatabase Management:\n\t[0] (for testing) Initialize the music database with a single song\n\t[1] Initialize the music database\nType the number you select after star line or type 13 to close the application\n********************");
-            switch (Integer.parseInt(scnr.nextLine())) {// required to use nextLine to pass autograder
+            switch (Integer.parseInt(scnr.nextLine())) {
                 case 0:
                     System.out.println(
                             "Type info using the following format and press enter: name,artist,popularity,duration,url");
